@@ -1,0 +1,67 @@
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+body {
+    background: url("../images/img1.jpg");
+    animation-name: myfirst;
+    animation-duration: 12s;
+    /*变换时间*/
+    animation-delay: 2s;
+    /*动画开始时间*/
+    animation-iteration-count: infinite;
+    /*下一周期循环播放*/
+    animation-play-state: running;
+    /*动画开始运行*/
+}
+
+@keyframes myfirst {
+    0% {
+        background: url("../images/img1.jpg");
+    }
+    34% {
+        background: url("../images/img1.jpg");
+    }
+    67% {
+        background: url("../images/img1.jpg");
+    }
+    100% {
+        background: url("../images/img1.jpg");
+    }
+}
+.form-horizontal{
+    padding: 20px 10px;
+}
+.form-title {
+    text-align: center;
+    line-height: 2rem;
+    color: red;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.2);
+    width: 400px;
+    margin: 120px auto;
+}
+
+.iconfont {
+    display: inline-block;
+    top: 32px;
+    left: 6px;
+    position: relative;
+    color: #ccc;
+}
+
+input[type="text"], input[type="password"] {
+    padding-left: 26px;
+}
+
+.checkbox > input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+

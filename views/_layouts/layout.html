@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{block 'title'}}火星站子{{/block}}</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/css/index.css">
+    {{block 'head'}}
+    {{/block}}
+</head>
+<body>
+{{include '../_partials/header.html'}}
+{{block 'content'}}
+<div class="container">
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-12 px-0">
+            <h1 class="display-4 font-italic">{{name}}</h1>
+            <p class="lead my-3">{{desc}}</p>
+            <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+        </div>
+    </div>
+</div>
+{{/block}}
+{{include '../_partials/footer.html'}}
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+{{block 'scripts'}}
+{{/block}}
+</body>
+</html>
